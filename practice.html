@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox</title>
+    <style></style>
+    <link rel="stylesheet" href="styles/lightbox.min.css" />
+    <script src="Js/lightbox-plus-jquery.min.js"></script>
+  
+  </head>
+  <body>
+    <h1>Lightbox Gallery</h1>
+
+    <div class="gallery">
+      <a href="images/about.jpg" data-lightbox="mygallery" data-title="pic1"
+        ><img src="images/about.jpg" style="width: 30%; height: 400px"
+      /></a>
+      <a href="images/about2.jpg" data-lightbox="mygallery"
+        ><img src="images/about2.jpg" style="width: 30%; height: 400px"
+      /></a>
+      <a href="images/car-2.jpg" data-lightbox="mygallery"
+        ><img src="images/car-2.jpg" style="width: 30%; height: 400px"
+      /></a>
+    </div>
+
+    <div>
+      <h1>Filter Gallery</h1>
+
+      <div class="image-filter">
+        <div class="filter">
+          <ul>
+            <li class="btn" datat-filter="*"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $(".grid").isotope({
+        // options
+        itemSelector: ".grid-item",
+        layoutMode: "fitRows",
+      });
+    </script>
+  </body>
+</html>
